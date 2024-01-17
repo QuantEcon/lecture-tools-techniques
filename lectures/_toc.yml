@@ -1,0 +1,45 @@
+format: jb-book
+root: intro
+parts:
+- caption: Linear Algebra
+  numbered: true
+  chapters:
+  - file: linear_algebra
+  - file: qr_decomp
+  - file: eig_circulant
+  - file: svd_intro
+  - file: lu_tricks
+  - file: classical_filtering
+- caption: Linear Programming
+  numbered: true
+  chapters:
+  - file: lp_intro
+  - file: opt_transport
+  - file: von_neumann_model
+- caption: Solution Methods
+  numbered: true
+  chapters:
+  - file: newton_method
+  - file: discrete_dp
+- caption: Time Series Models
+  numbered: true
+  chapters:
+  - file: var_dmd
+  - file: finite_markov
+  - file: stationary_densities
+  - file: arma
+  - file: estspec
+  - file: additive_functionals
+- caption: Risk, Model Uncertainty and Robustness
+  numbered: true
+  chapters:
+  - file: five_preferences
+  - file: entropy
+  - file: robustness
+  - file: rob_markov_perf
+- caption: Other
+  numbered: true
+  chapters:
+  - file: troubleshooting
+  - file: zreferences
+  - file: status
