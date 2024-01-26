@@ -1056,7 +1056,7 @@ $$
 ```
 
 
-For an example  PCA applied to analyzing the structure of intelligence tests see this lecture {doc}`Multivariable Normal Distribution <multivariate_normal>`.
+For an example  PCA applied to analyzing the structure of intelligence tests see this lecture {doc}`Multivariable Normal Distribution <stats:multivariate_normal>`.
 
 Look at  parts of that lecture that describe and illustrate the classic factor analysis model.
 
