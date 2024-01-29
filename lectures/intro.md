@@ -9,7 +9,7 @@ kernelspec:
   name: python3
 ---
 
-# Tools & Techniques for Computational Economics
+# Tools and Techniques for Computational Economics
 
 This website presents a set of lectures on the tools and techniques required to study computational economics.
 
