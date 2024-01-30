@@ -74,11 +74,6 @@ sphinx:
           url: http://www.tomsargent.com/
         - name: John Stachurski
           url: https://johnstachurski.net/
-      authors:
-        - name: Thomas J. Sargent
-          url: http://www.tomsargent.com/
-        - name: John Stachurski
-          url: https://johnstachurski.net/
       header_organisation_url: https://quantecon.org
       header_organisation: QuantEcon
       repository_url: https://github.com/QuantEcon/lecture-tools-techniques
@@ -88,10 +83,8 @@ sphinx:
       og_logo_url: https://assets.quantecon.org/img/qe-og-logo.png
       description: This website presents a set of lectures on the tools and techniques required to study computational economics.
       keywords: Python, QuantEcon, Quantitative Economics, Economics, Sloan, Alfred P. Sloan Foundation, Tom J. Sargent, John Stachurski
-
-      #analytics:
-        #google_analytics_id: G-J0SMYR4SG3
-        
+      analytics:
+        google_analytics_id: G-FH5JZQ6T4G
       launch_buttons:
         colab_url                 : https://colab.research.google.com
     intersphinx_mapping:
@@ -126,8 +119,8 @@ sphinx:
     rediraffe_redirects:
       index_toc.md: intro.md
     # Remote Redirects
-    redirects:
-      heavy_tails: https://intro.quantecon.org/heavy_tails.html
+    # redirects:
+    #   heavy_tails: https://intro.quantecon.org/heavy_tails.html
     tojupyter_static_file_path: ["source/_static", "_static"]
     tojupyter_target_html: true
     tojupyter_urlpath: "https://tools-techniques.quantecon.org/"
