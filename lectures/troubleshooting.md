@@ -33,7 +33,7 @@ The basic assumption of the lectures is that code in a lecture should execute wh
 1. it is executed in a Jupyter notebook and
 1. the notebook is running on a machine with the latest version of Anaconda Python.
 
-You have installed Anaconda, haven't you, following the instructions in [this lecture](https://python-programming.quantecon.org/getting_started.html)?
+You have installed Anaconda, haven't you, following the instructions in {doc}`this lecture <pyprog:getting_started>`?
 
 Assuming that you have, the most common source of problems for our readers is that their Anaconda distribution is not up to date.
 

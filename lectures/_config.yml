@@ -88,6 +88,9 @@ sphinx:
       launch_buttons:
         colab_url                 : https://colab.research.google.com
     intersphinx_mapping:
+      pyprog:
+        - https://python-programming.quantecon.org/
+        - null
       intro: 
         - https://intro.quantecon.org/
         - null
