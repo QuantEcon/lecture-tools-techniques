@@ -92,7 +92,7 @@ Among other things, it offers
 * the ability to scale to large problems by minimizing vectorized operators and allowing operations on sparse matrices
 
 JIT compilation relies on [Numba](http://numba.pydata.org/), which should work
-seamlessly if you are using [Anaconda](https://www.anaconda.com/download/) as [suggested](https://python-programming.quantecon.org/getting_started.html).
+seamlessly if you are using [Anaconda](https://www.anaconda.com/download/) as {doc}`suggested <pyprog:getting_started>`.
 
 ### References
 

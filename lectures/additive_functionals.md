@@ -1264,10 +1264,10 @@ These probability density functions help us understand mechanics underlying the 
 
 ### Multiplicative Martingale as Likelihood Ratio Process
 
-[This lecture](https://python.quantecon.org/likelihood_ratio_process.html) studies **likelihood processes**
+{doc}`This lecture <stats:likelihood_ratio_process>` studies **likelihood processes**
 and **likelihood ratio processes**.
 
 A **likelihood ratio process** is  a  multiplicative  martingale with mean unity.
 
 Likelihood ratio processes exhibit the peculiar property that naturally also appears
-[here](https://python.quantecon.org/likelihood_ratio_process.html).
+{doc}`here <stats:likelihood_ratio_process>`.
