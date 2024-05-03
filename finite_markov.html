@@ -305,19 +305,19 @@ const thebe_selector_output = ".output, .cell_output"
 <span class="expanded">Hide code cell output</span>
 </summary>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: quantecon in /home/runner/miniconda3/envs/quantecon/lib/python3.11/site-packages (0.7.1)
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: quantecon in /home/runner/miniconda3/envs/quantecon/lib/python3.11/site-packages (0.7.2)
+Requirement already satisfied: numba&gt;=0.49.0 in /home/runner/miniconda3/envs/quantecon/lib/python3.11/site-packages (from quantecon) (0.59.0)
+Requirement already satisfied: numpy&gt;=1.17.0 in /home/runner/miniconda3/envs/quantecon/lib/python3.11/site-packages (from quantecon) (1.26.4)
+Requirement already satisfied: requests in /home/runner/miniconda3/envs/quantecon/lib/python3.11/site-packages (from quantecon) (2.31.0)
+Requirement already satisfied: scipy&gt;=1.5.0 in /home/runner/miniconda3/envs/quantecon/lib/python3.11/site-packages (from quantecon) (1.11.4)
+Requirement already satisfied: sympy in /home/runner/miniconda3/envs/quantecon/lib/python3.11/site-packages (from quantecon) (1.12)
+Requirement already satisfied: llvmlite&lt;0.43,&gt;=0.42.0dev0 in /home/runner/miniconda3/envs/quantecon/lib/python3.11/site-packages (from numba&gt;=0.49.0-&gt;quantecon) (0.42.0)
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: numba&gt;=0.49.0 in /home/runner/miniconda3/envs/quantecon/lib/python3.11/site-packages (from quantecon) (0.57.1)
-Requirement already satisfied: numpy&gt;=1.17.0 in /home/runner/miniconda3/envs/quantecon/lib/python3.11/site-packages (from quantecon) (1.24.3)
-Requirement already satisfied: requests in /home/runner/miniconda3/envs/quantecon/lib/python3.11/site-packages (from quantecon) (2.31.0)
-Requirement already satisfied: scipy&gt;=1.5.0 in /home/runner/miniconda3/envs/quantecon/lib/python3.11/site-packages (from quantecon) (1.11.1)
-Requirement already satisfied: sympy in /home/runner/miniconda3/envs/quantecon/lib/python3.11/site-packages (from quantecon) (1.11.1)
-Requirement already satisfied: llvmlite&lt;0.41,&gt;=0.40.0dev0 in /home/runner/miniconda3/envs/quantecon/lib/python3.11/site-packages (from numba&gt;=0.49.0-&gt;quantecon) (0.40.0)
-Requirement already satisfied: charset-normalizer&lt;4,&gt;=2 in /home/runner/miniconda3/envs/quantecon/lib/python3.11/site-packages (from requests-&gt;quantecon) (2.0.4)
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: charset-normalizer&lt;4,&gt;=2 in /home/runner/miniconda3/envs/quantecon/lib/python3.11/site-packages (from requests-&gt;quantecon) (2.0.4)
 Requirement already satisfied: idna&lt;4,&gt;=2.5 in /home/runner/miniconda3/envs/quantecon/lib/python3.11/site-packages (from requests-&gt;quantecon) (3.4)
-Requirement already satisfied: urllib3&lt;3,&gt;=1.21.1 in /home/runner/miniconda3/envs/quantecon/lib/python3.11/site-packages (from requests-&gt;quantecon) (1.26.16)
-Requirement already satisfied: certifi&gt;=2017.4.17 in /home/runner/miniconda3/envs/quantecon/lib/python3.11/site-packages (from requests-&gt;quantecon) (2023.7.22)
+Requirement already satisfied: urllib3&lt;3,&gt;=1.21.1 in /home/runner/miniconda3/envs/quantecon/lib/python3.11/site-packages (from requests-&gt;quantecon) (2.0.7)
+Requirement already satisfied: certifi&gt;=2017.4.17 in /home/runner/miniconda3/envs/quantecon/lib/python3.11/site-packages (from requests-&gt;quantecon) (2024.2.2)
 Requirement already satisfied: mpmath&gt;=0.19 in /home/runner/miniconda3/envs/quantecon/lib/python3.11/site-packages (from sympy-&gt;quantecon) (1.3.0)
 </pre></div>
 </div>
@@ -429,7 +429,7 @@ chain <span class="math notranslate nohighlight">\(\{X_t\}\)</span> as follows:<
 </section>
 <section id="example-2">
 <span id="mc-eg2"></span><h3><span class="section-number">13.2.4. </span>Example 2<a class="headerlink" href="#example-2" title="Permalink to this heading">#</a></h3>
-<p>From  US unemployment data, Hamilton <span id="id2">[<a class="reference internal" href="zreferences.html#id155" title="James D Hamilton. What's real about the business cycle? Federal Reserve Bank of St. Louis Review, pages 435–452, 2005.">Ham05</a>]</span> estimated the stochastic matrix</p>
+<p>From  US unemployment data, Hamilton <span id="id2">[<a class="reference internal" href="zreferences.html#id155" title="James D Hamilton. What's real about the business cycle? Federal Reserve Bank of St. Louis Review, pages 435–452, 2005.">Hamilton, 2005</a>]</span> estimated the stochastic matrix</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
 P =
@@ -486,7 +486,7 @@ P =
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([1, 1, 1, 1, 1])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([0, 0, 1, 1, 0])
 </pre></div>
 </div>
 </div>
@@ -546,7 +546,7 @@ P =
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.24961
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.24809
 </pre></div>
 </div>
 </div>
@@ -569,7 +569,7 @@ always close to 0.25, at least for the <code class="docutils literal notranslate
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.25001
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.249853
 </pre></div>
 </div>
 </div>
@@ -582,11 +582,11 @@ always close to 0.25, at least for the <code class="docutils literal notranslate
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CPU times: user 879 ms, sys: 0 ns, total: 879 ms
-Wall time: 879 ms
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CPU times: user 927 ms, sys: 756 µs, total: 928 ms
+Wall time: 927 ms
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([0, 1, 1, ..., 1, 1, 1])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([0, 0, 1, ..., 1, 1, 1])
 </pre></div>
 </div>
 </div>
@@ -598,11 +598,11 @@ Wall time: 879 ms
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CPU times: user 14.9 ms, sys: 0 ns, total: 14.9 ms
-Wall time: 14.4 ms
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CPU times: user 10.1 ms, sys: 3.83 ms, total: 13.9 ms
+Wall time: 13.7 ms
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([0, 0, 1, ..., 1, 1, 1])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([1, 1, 1, ..., 1, 1, 1])
 </pre></div>
 </div>
 </div>
@@ -620,7 +620,7 @@ Wall time: 14.4 ms
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([&#39;employed&#39;, &#39;employed&#39;, &#39;unemployed&#39;, &#39;employed&#39;], dtype=&#39;&lt;U10&#39;)
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([&#39;employed&#39;, &#39;unemployed&#39;, &#39;employed&#39;, &#39;unemployed&#39;], dtype=&#39;&lt;U10&#39;)
 </pre></div>
 </div>
 </div>
@@ -632,7 +632,7 @@ Wall time: 14.4 ms
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([&#39;unemployed&#39;, &#39;unemployed&#39;, &#39;unemployed&#39;, &#39;employed&#39;], dtype=&#39;&lt;U10&#39;)
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([&#39;unemployed&#39;, &#39;employed&#39;, &#39;employed&#39;, &#39;employed&#39;], dtype=&#39;&lt;U10&#39;)
 </pre></div>
 </div>
 </div>
@@ -644,7 +644,7 @@ Wall time: 14.4 ms
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([&#39;employed&#39;, &#39;employed&#39;, &#39;unemployed&#39;, &#39;unemployed&#39;], dtype=&#39;&lt;U10&#39;)
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([&#39;employed&#39;, &#39;unemployed&#39;, &#39;employed&#39;, &#39;employed&#39;], dtype=&#39;&lt;U10&#39;)
 </pre></div>
 </div>
 </div>
@@ -657,7 +657,7 @@ Wall time: 14.4 ms
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([1, 1, 1, 1])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([0, 1, 1, 0])
 </pre></div>
 </div>
 </div>
@@ -986,7 +986,7 @@ state space cannot be accessed from it.</p>
 <li><p><span class="math notranslate nohighlight">\(P\)</span> has exactly one stationary distribution <span class="math notranslate nohighlight">\(\psi^*\)</span>.</p></li>
 <li><p>For any initial marginal distribution <span class="math notranslate nohighlight">\(\psi_0\)</span>, we have <span class="math notranslate nohighlight">\(\| \psi_0 P^t - \psi^* \| \to 0\)</span> as <span class="math notranslate nohighlight">\(t \to \infty\)</span>.</p></li>
 </ol>
-<p>For a proof, see, for example, theorem 5.2 of <span id="id3">[<a class="reference internal" href="zreferences.html#id123" title="Olle Häggström. Finite Markov chains and algorithmic applications. Volume 52. Cambridge University Press, 2002.">Haggstrom02</a>]</span>.</p>
+<p>For a proof, see, for example, theorem 5.2 of <span id="id3">[<a class="reference internal" href="zreferences.html#id123" title="Olle Häggström. Finite Markov chains and algorithmic applications. Volume 52. Cambridge University Press, 2002.">Häggström, 2002</a>]</span>.</p>
 <p>(Note that part 1 of the theorem only requires  irreducibility, whereas part 2
 requires both irreducibility and aperiodicity)</p>
 <p>A stochastic matrix that satisfies the conditions of the theorem is sometimes called <strong>uniformly ergodic</strong>.</p>
@@ -1090,7 +1090,7 @@ with the unit eigenvalue <span class="math notranslate nohighlight">\(\lambda = 
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/c637beb99372e3cb2f1180415d51233fe39d57a4761a0635281664c3a226e0f6.png" src="_images/c637beb99372e3cb2f1180415d51233fe39d57a4761a0635281664c3a226e0f6.png" />
+<img alt="_images/c389b9aaa69efa448c6b519875998a2160ffff52b73be68d7a0883df9f55693d.png" src="_images/c389b9aaa69efa448c6b519875998a2160ffff52b73be68d7a0883df9f55693d.png" />
 </div>
 </div>
 <p>Here</p>
@@ -1293,7 +1293,7 @@ conditions.</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/dec4241f353425a5039943522a012e7114b583879e91e735071b7e1c71137a40.png" src="_images/dec4241f353425a5039943522a012e7114b583879e91e735071b7e1c71137a40.png" />
+<img alt="_images/5e9f0440d3e430b933f9bb5644d0d22ef157cd47c030055546800fc1ccca0859.png" src="_images/5e9f0440d3e430b933f9bb5644d0d22ef157cd47c030055546800fc1ccca0859.png" />
 </div>
 </div>
 </section>
@@ -1305,7 +1305,7 @@ conditions.</p>
 <p>A topic of interest for economics and many other disciplines is <em>ranking</em>.</p>
 <p>Let’s now consider one of the most practical and important ranking problems
 — the rank assigned to web pages by search engines.</p>
-<p>(Although the problem is motivated from outside of economics, there is in fact a deep connection between search ranking systems and prices in certain competitive equilibria — see <span id="id6">[<a class="reference internal" href="zreferences.html#id147" title="Y E Du, Ehud Lehrer, and A D Y Pauzner. Competitive economy as a ranking device over networks. submitted, 2013.">DLP13</a>]</span>.)</p>
+<p>(Although the problem is motivated from outside of economics, there is in fact a deep connection between search ranking systems and prices in certain competitive equilibria — see <span id="id6">[<a class="reference internal" href="zreferences.html#id147" title="Y E Du, Ehud Lehrer, and A D Y Pauzner. Competitive economy as a ranking device over networks. submitted, 2013.">Du <em>et al.</em>, 2013</a>]</span>.)</p>
 <p>To understand the issue, consider the set of results returned by a query to a web search engine.</p>
 <p>For the user, it is desirable to</p>
 <ol class="arabic simple">
@@ -1534,7 +1534,7 @@ y_{t+1} = \rho y_t + u_{t+1}
 \[
 \sigma_y^2 := \frac{\sigma_u^2}{1-\rho^2}
 \]</div>
-<p>Tauchen’s method <span id="id7">[<a class="reference internal" href="zreferences.html#id212" title="George Tauchen. Finite state markov-chain approximations to univariate and vector autoregressions. Economics Letters, 20(2):177–181, 1986.">Tau86</a>]</span> is the most common method for approximating this continuous state process with a finite state Markov chain.</p>
+<p>Tauchen’s method <span id="id7">[<a class="reference internal" href="zreferences.html#id212" title="George Tauchen. Finite state markov-chain approximations to univariate and vector autoregressions. Economics Letters, 20(2):177–181, 1986.">Tauchen, 1986</a>]</span> is the most common method for approximating this continuous state process with a finite state Markov chain.</p>
 <p>A routine for this already exists in <a class="reference external" href="http://quantecon.org/quantecon-py">QuantEcon.py</a> but let’s write our own version as an exercise.</p>
 <p>As a first step, we choose</p>
 <ul class="simple">

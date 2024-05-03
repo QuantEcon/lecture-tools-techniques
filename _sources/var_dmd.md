@@ -260,22 +260,17 @@ $$ (eq:AhatSVDformula)
 
 ## Dynamic Mode Decomposition (DMD)
 
-
-
 We turn to the $ m >>n $ **tall and skinny** case  associated with **Dynamic Mode Decomposition**.
 
 Here an $ m \times n+1 $  data matrix $ \tilde X $ contains many more attributes (or variables) $ m $ than time periods  $ n+1 $.
 
-
 Dynamic mode decomposition was introduced by {cite}`schmid2010`,
 
-You can read  about Dynamic Mode Decomposition here {cite}`DMD_book` and here [[BK19](https://python.quantecon.org/zreferences.html#id25)] (section 7.2).
+You can read  about Dynamic Mode Decomposition here {cite}`DMD_book` and here {cite}`Brunton_Kutz_2019` (section 7.2).
 
 **Dynamic Mode Decomposition** (DMD) computes a rank $ r < p  $ approximation to the least squares regression coefficients $ \hat A $  described by formula {eq}`eq:AhatSVDformula`.
 
-  
 We'll  build up gradually  to a formulation that is useful  in applications.
-
 
 We'll do this by describing three  alternative representations of our first-order linear dynamic system, i.e., our vector autoregression. 
 
@@ -288,7 +283,6 @@ In applications, we'll use only a small  subset of **DMD modes** to approximate 
 We use  such a small subset of DMD modes to  construct a reduced-rank approximation to $A$.
 
 To do that, we'll want to use the  **reduced**  SVD's affiliated with representation 3, not the **full** SVD's affiliated with representations 1 and 2. 
-
 
 **Guide to impatient reader:** In our applications, we'll be using Representation 3. 
 

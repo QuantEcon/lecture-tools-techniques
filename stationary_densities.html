@@ -282,21 +282,19 @@ const thebe_selector_output = ".output, .cell_output"
 <span class="expanded">Hide code cell output</span>
 </summary>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: quantecon in /home/runner/miniconda3/envs/quantecon/lib/python3.11/site-packages (0.7.1)
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: quantecon in /home/runner/miniconda3/envs/quantecon/lib/python3.11/site-packages (0.7.2)
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: numba&gt;=0.49.0 in /home/runner/miniconda3/envs/quantecon/lib/python3.11/site-packages (from quantecon) (0.57.1)
-Requirement already satisfied: numpy&gt;=1.17.0 in /home/runner/miniconda3/envs/quantecon/lib/python3.11/site-packages (from quantecon) (1.24.3)
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: numba&gt;=0.49.0 in /home/runner/miniconda3/envs/quantecon/lib/python3.11/site-packages (from quantecon) (0.59.0)
+Requirement already satisfied: numpy&gt;=1.17.0 in /home/runner/miniconda3/envs/quantecon/lib/python3.11/site-packages (from quantecon) (1.26.4)
 Requirement already satisfied: requests in /home/runner/miniconda3/envs/quantecon/lib/python3.11/site-packages (from quantecon) (2.31.0)
-Requirement already satisfied: scipy&gt;=1.5.0 in /home/runner/miniconda3/envs/quantecon/lib/python3.11/site-packages (from quantecon) (1.11.1)
-Requirement already satisfied: sympy in /home/runner/miniconda3/envs/quantecon/lib/python3.11/site-packages (from quantecon) (1.11.1)
-Requirement already satisfied: llvmlite&lt;0.41,&gt;=0.40.0dev0 in /home/runner/miniconda3/envs/quantecon/lib/python3.11/site-packages (from numba&gt;=0.49.0-&gt;quantecon) (0.40.0)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: charset-normalizer&lt;4,&gt;=2 in /home/runner/miniconda3/envs/quantecon/lib/python3.11/site-packages (from requests-&gt;quantecon) (2.0.4)
+Requirement already satisfied: scipy&gt;=1.5.0 in /home/runner/miniconda3/envs/quantecon/lib/python3.11/site-packages (from quantecon) (1.11.4)
+Requirement already satisfied: sympy in /home/runner/miniconda3/envs/quantecon/lib/python3.11/site-packages (from quantecon) (1.12)
+Requirement already satisfied: llvmlite&lt;0.43,&gt;=0.42.0dev0 in /home/runner/miniconda3/envs/quantecon/lib/python3.11/site-packages (from numba&gt;=0.49.0-&gt;quantecon) (0.42.0)
+Requirement already satisfied: charset-normalizer&lt;4,&gt;=2 in /home/runner/miniconda3/envs/quantecon/lib/python3.11/site-packages (from requests-&gt;quantecon) (2.0.4)
 Requirement already satisfied: idna&lt;4,&gt;=2.5 in /home/runner/miniconda3/envs/quantecon/lib/python3.11/site-packages (from requests-&gt;quantecon) (3.4)
-Requirement already satisfied: urllib3&lt;3,&gt;=1.21.1 in /home/runner/miniconda3/envs/quantecon/lib/python3.11/site-packages (from requests-&gt;quantecon) (1.26.16)
-Requirement already satisfied: certifi&gt;=2017.4.17 in /home/runner/miniconda3/envs/quantecon/lib/python3.11/site-packages (from requests-&gt;quantecon) (2023.7.22)
+Requirement already satisfied: urllib3&lt;3,&gt;=1.21.1 in /home/runner/miniconda3/envs/quantecon/lib/python3.11/site-packages (from requests-&gt;quantecon) (2.0.7)
+Requirement already satisfied: certifi&gt;=2017.4.17 in /home/runner/miniconda3/envs/quantecon/lib/python3.11/site-packages (from requests-&gt;quantecon) (2024.2.2)
 Requirement already satisfied: mpmath&gt;=0.19 in /home/runner/miniconda3/envs/quantecon/lib/python3.11/site-packages (from sympy-&gt;quantecon) (1.3.0)
 </pre></div>
 </div>
@@ -334,7 +332,7 @@ such as simulation, distribution dynamics, stability, ergodicity, etc.</p>
 <p class="admonition-title">Note</p>
 <p>For some people, the term “Markov chain” always refers to a process with a
 finite or discrete state space.  We follow the mainstream
-mathematical literature (e.g., <span id="id1">[<a class="reference internal" href="zreferences.html#id183" title="S P Meyn and R L Tweedie. Markov Chains and Stochastic Stability. Cambridge University Press, 2009.">MT09</a>]</span>) in using the term to refer to any discrete <strong>time</strong>
+mathematical literature (e.g., <span id="id1">[<a class="reference internal" href="zreferences.html#id183" title="S P Meyn and R L Tweedie. Markov Chains and Stochastic Stability. Cambridge University Press, 2009.">Meyn and Tweedie, 2009</a>]</span>) in using the term to refer to any discrete <strong>time</strong>
 Markov process.</p>
 </div>
 <p>Let’s begin with some imports:</p>
@@ -447,7 +445,7 @@ X_{t+1} = \alpha X_t + \sigma_t \,  \xi_{t+1},
 <li><p><span class="math notranslate nohighlight">\(\delta\)</span> is a depreciation rate</p></li>
 <li><p><span class="math notranslate nohighlight">\(f \colon \mathbb R_+ \to \mathbb R_+\)</span> is a production function satisfying <span class="math notranslate nohighlight">\(f(k) &gt; 0\)</span> whenever <span class="math notranslate nohighlight">\(k &gt; 0\)</span></p></li>
 </ul>
-<p>(The fixed savings rate can be rationalized as the optimal policy for a particular set of technologies and preferences (see <span id="id2">[<a class="reference internal" href="zreferences.html#id173" title="L Ljungqvist and T J Sargent. Recursive Macroeconomic Theory. MIT Press, 4 edition, 2018.">LS18</a>]</span>, section
+<p>(The fixed savings rate can be rationalized as the optimal policy for a particular set of technologies and preferences (see <span id="id2">[<a class="reference internal" href="zreferences.html#id173" title="L Ljungqvist and T J Sargent. Recursive Macroeconomic Theory. MIT Press, 4 edition, 2018.">Ljungqvist and Sargent, 2018</a>]</span>, section
 3.1.2), although we omit the details here).</p>
 <p>Equation <a class="reference internal" href="#equation-statd-ss">(14.5)</a> is a special case of <a class="reference internal" href="#equation-statd-srs">(14.3)</a> with <span class="math notranslate nohighlight">\(\mu(x) = (1 - \delta)x\)</span> and <span class="math notranslate nohighlight">\(\sigma(x) = s f(x)\)</span>.</p>
 <p>Now let’s obtain the stochastic kernel corresponding to the generic model <a class="reference internal" href="#equation-statd-srs">(14.3)</a>.</p>
@@ -647,7 +645,7 @@ would be in C or Fortran.</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/a72dab954a0ff6fb88162643410ec46177e6e0eb008205d64a4b82ddf6f29aba.png" src="_images/a72dab954a0ff6fb88162643410ec46177e6e0eb008205d64a4b82ddf6f29aba.png" />
+<img alt="_images/b58dc82991299360ff4c20948f90d98bff3a18ca3622933affe4aefa2714389c.png" src="_images/b58dc82991299360ff4c20948f90d98bff3a18ca3622933affe4aefa2714389c.png" />
 </div>
 </div>
 <p>The figure shows part of the density sequence <span class="math notranslate nohighlight">\(\{\psi_t\}\)</span>, with each
@@ -671,7 +669,7 @@ be familiar with measure theory.</p>
 <p>We can, however, construct a fairly general theory using distribution functions.</p>
 <section id="example-and-definitions">
 <h3><span class="section-number">14.3.1. </span>Example and Definitions<a class="headerlink" href="#example-and-definitions" title="Permalink to this heading">#</a></h3>
-<p>To illustrate the issues, recall that Hopenhayn and Rogerson <span id="id3">[<a class="reference internal" href="zreferences.html#id162" title="Hugo A Hopenhayn and Richard Rogerson. Job Turnover and Policy Evaluation: A General Equilibrium Analysis. Journal of Political Economy, 101(5):915–938, 1993.">HR93</a>]</span> study a model of firm dynamics where individual firm productivity follows the exogenous process</p>
+<p>To illustrate the issues, recall that Hopenhayn and Rogerson <span id="id3">[<a class="reference internal" href="zreferences.html#id162" title="Hugo A Hopenhayn and Richard Rogerson. Job Turnover and Policy Evaluation: A General Equilibrium Analysis. Journal of Political Economy, 101(5):915–938, 1993.">Hopenhayn and Rogerson, 1993</a>]</span> study a model of firm dynamics where individual firm productivity follows the exogenous process</p>
 <div class="math notranslate nohighlight">
 \[
 X_{t+1} = a + \rho X_t + \xi_{t+1},
@@ -759,8 +757,8 @@ of <a class="reference internal" href="#equation-statd-dca">(14.16)</a> is often
 <p>For one such set of conditions see theorem 8.2.14 of <a class="reference external" href="http://johnstachurski.net/edtc.html">EDTC</a>.</p>
 <p>In addition</p>
 <ul class="simple">
-<li><p><span id="id5">[<a class="reference internal" href="zreferences.html#id209" title="N L Stokey, R E Lucas, and E C Prescott. Recursive Methods in Economic Dynamics. Harvard University Press, 1989.">SLP89</a>]</span>  contains a classic (but slightly outdated) treatment of these topics.</p></li>
-<li><p>From the mathematical literature, <span id="id6">[<a class="reference internal" href="zreferences.html#id172" title="A Lasota and M C MacKey. Chaos, Fractals, and Noise: Stochastic Aspects of Dynamics. Applied Mathematical Sciences. Springer-Verlag, 1994.">LM94</a>]</span>  and <span id="id7">[<a class="reference internal" href="zreferences.html#id183" title="S P Meyn and R L Tweedie. Markov Chains and Stochastic Stability. Cambridge University Press, 2009.">MT09</a>]</span> give outstanding in-depth treatments.</p></li>
+<li><p><span id="id5">[<a class="reference internal" href="zreferences.html#id209" title="N L Stokey, R E Lucas, and E C Prescott. Recursive Methods in Economic Dynamics. Harvard University Press, 1989.">Stokey <em>et al.</em>, 1989</a>]</span>  contains a classic (but slightly outdated) treatment of these topics.</p></li>
+<li><p>From the mathematical literature, <span id="id6">[<a class="reference internal" href="zreferences.html#id172" title="A Lasota and M C MacKey. Chaos, Fractals, and Noise: Stochastic Aspects of Dynamics. Applied Mathematical Sciences. Springer-Verlag, 1994.">Lasota and MacKey, 1994</a>]</span>  and <span id="id7">[<a class="reference internal" href="zreferences.html#id183" title="S P Meyn and R L Tweedie. Markov Chains and Stochastic Stability. Cambridge University Press, 2009.">Meyn and Tweedie, 2009</a>]</span> give outstanding in-depth treatments.</p></li>
 <li><p>Section 8.1.2 of <a class="reference external" href="http://johnstachurski.net/edtc.html">EDTC</a> provides detailed intuition, and section 8.3 gives additional references.</p></li>
 <li><p><a class="reference external" href="http://johnstachurski.net/edtc.html">EDTC</a>, section 11.3.4
 provides a specific treatment for the growth model we considered in this
@@ -897,7 +895,7 @@ X_{t+1} = \theta |X_t| + (1 - \theta^2)^{1/2} \xi_{t+1}
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/49c53272a90c8d8d88ffbc25c06628ca7d8ee261d93e0f37ebb6bb15cb537a15.png" src="_images/49c53272a90c8d8d88ffbc25c06628ca7d8ee261d93e0f37ebb6bb15cb537a15.png" />
+<img alt="_images/945a773a328421c125f35e5f484473d5db15b4f793e5b9e8a992de92d2acdec7.png" src="_images/945a773a328421c125f35e5f484473d5db15b4f793e5b9e8a992de92d2acdec7.png" />
 </div>
 </div>
 </section>
@@ -969,7 +967,7 @@ X_{t+1} = \theta |X_t| + (1 - \theta^2)^{1/2} \xi_{t+1}
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/8fc5a81426a488f2dd62d0071e8514a106a7928e4247593eb086aa87ff1f2332.png" src="_images/8fc5a81426a488f2dd62d0071e8514a106a7928e4247593eb086aa87ff1f2332.png" />
+<img alt="_images/152b14585a5abb6ad2248bae0e202e76fb9bc62d9129a49f300ebebd271138fe.png" src="_images/152b14585a5abb6ad2248bae0e202e76fb9bc62d9129a49f300ebebd271138fe.png" />
 </div>
 </div>
 </section>
@@ -1007,7 +1005,7 @@ X_{t+1} = \theta |X_t| + (1 - \theta^2)^{1/2} \xi_{t+1}
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/1f55dac0ca377f86a5945a088a0ca8438be77eed9dbfe21eddfa6caa9c424d48.png" src="_images/1f55dac0ca377f86a5945a088a0ca8438be77eed9dbfe21eddfa6caa9c424d48.png" />
+<img alt="_images/bc72e1757c6f865cdb6b8c3f6c96947f2c4bb1e960579995d2510643ca9d9173.png" src="_images/bc72e1757c6f865cdb6b8c3f6c96947f2c4bb1e960579995d2510643ca9d9173.png" />
 </div>
 </div>
 <p>Each data set is represented by a box, where the top and bottom of the box are the third and first quartiles of the data, and the red line in the center is the median.</p>
@@ -1070,7 +1068,7 @@ series for one boxplot all at once</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/358d57e90b5fbf43ddaf2b09c31b41320f1345f47916bea036af5e5d514d7939.png" src="_images/358d57e90b5fbf43ddaf2b09c31b41320f1345f47916bea036af5e5d514d7939.png" />
+<img alt="_images/417035b0b345c82688dc069e70319ea59aebc7df398ee56372d4575f48be6b0a.png" src="_images/417035b0b345c82688dc069e70319ea59aebc7df398ee56372d4575f48be6b0a.png" />
 </div>
 </div>
 </section>
