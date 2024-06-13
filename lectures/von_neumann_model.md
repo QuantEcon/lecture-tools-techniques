@@ -23,10 +23,6 @@ kernelspec:
 
 # Von Neumann Growth Model (and a Generalization)
 
-```{contents} Contents
-:depth: 2
-```
-
 This lecture uses the class `Neumann` to calculate key objects of a
 linear growth model of John von Neumann {cite}`von1937uber` that was generalized by
 Kemeny, Morgenstern and Thompson {cite}`kemeny1956generalization`.
