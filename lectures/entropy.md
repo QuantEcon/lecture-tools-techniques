@@ -30,8 +30,8 @@ Among the senses of entropy, we'll encounter these
 * A frequency domain criterion for constructing robust decision rules 
 
 The concept of entropy plays an important role in robust control formulations described in this lecture 
-[Risk and Model Uncertainty](https://python-advanced.quantecon.org/five_preferences.html) and in this lecture
-[Robustness](https://python-advanced.quantecon.org/robustness.html).
+{doc}`Risk and Model Uncertainty <tools:five_preferences>` and in this lecture
+{doc}`Robustness <tools:robustness>`.
 
 
 
