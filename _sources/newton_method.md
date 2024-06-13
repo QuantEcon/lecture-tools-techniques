@@ -24,10 +24,6 @@ kernelspec:
 
 # Using Newton's Method to Solve Economic Models
 
-```{contents} Contents
-:depth: 2
-```
-
 ```{seealso}
 **GPU:** A version of this lecture which makes use of [jax](https://jax.readthedocs.io) to run the code
 on a `GPU` is [available here](https://jax.quantecon.org/newtons_method.html)

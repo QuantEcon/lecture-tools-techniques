@@ -56,19 +56,19 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
 
   
-  <link href="_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" href="_static/styles/quantecon-book-theme.css?digest=b09b2da44b9015b4fa76ea072fa2d8f7faee5492" type="text/css" />
@@ -80,9 +80,9 @@
     <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
-  <script src="_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=3ee479438cf8b5e0d341"></script>
 
 
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
@@ -257,28 +257,14 @@ const thebe_selector_output = ".output, .cell_output"
                 <img style="width:250px;display:inline;" width="250px" src="https://assets.quantecon.org/img/qe-menubar-logo.svg" alt="QuantEcon">
         </a>
 </div><section class="tex2jax_ignore mathjax_ignore" id="using-newtons-method-to-solve-economic-models">
-<span id="index-0"></span><h1><a class="toc-backref" href="#id1"><span class="section-number">10. </span>Using Newton’s Method to Solve Economic Models</a><a class="headerlink" href="#using-newtons-method-to-solve-economic-models" title="Permalink to this heading">#</a></h1>
-<div class="contents topic" id="contents">
-<p class="topic-title">Contents</p>
-<ul class="simple">
-<li><p><a class="reference internal" href="#using-newtons-method-to-solve-economic-models" id="id1">Using Newton’s Method to Solve Economic Models</a></p>
-<ul>
-<li><p><a class="reference internal" href="#overview" id="id2">Overview</a></p></li>
-<li><p><a class="reference internal" href="#fixed-point-computation-using-newtons-method" id="id3">Fixed Point Computation Using Newton’s Method</a></p></li>
-<li><p><a class="reference internal" href="#root-finding-in-one-dimension" id="id4">Root-Finding in One Dimension</a></p></li>
-<li><p><a class="reference internal" href="#multivariate-newtons-method" id="id5">Multivariate Newton’s Method</a></p></li>
-<li><p><a class="reference internal" href="#exercises" id="id6">Exercises</a></p></li>
-</ul>
-</li>
-</ul>
-</div>
+<span id="index-0"></span><h1><span class="section-number">10. </span>Using Newton’s Method to Solve Economic Models<a class="headerlink" href="#using-newtons-method-to-solve-economic-models" title="Permalink to this heading">#</a></h1>
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
 <p><strong>GPU:</strong> A version of this lecture which makes use of <a class="reference external" href="https://jax.readthedocs.io">jax</a> to run the code
 on a <code class="docutils literal notranslate"><span class="pre">GPU</span></code> is <a class="reference external" href="https://jax.quantecon.org/newtons_method.html">available here</a></p>
 </div>
 <section id="overview">
-<h2><a class="toc-backref" href="#id2"><span class="section-number">10.1. </span>Overview</a><a class="headerlink" href="#overview" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">10.1. </span>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">#</a></h2>
 <p>Many economic problems involve finding <a class="reference external" href="https://en.wikipedia.org/wiki/Fixed_point_(mathematics)">fixed
 points</a> or
 <a class="reference external" href="https://en.wikipedia.org/wiki/Zero_of_a_function">zeros</a> (sometimes called
@@ -327,18 +313,16 @@ differentiation in <a class="reference external" href="https://github.com/HIPS/a
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Downloading autograd-1.6.2-py3-none-any.whl.metadata (706 bytes)
 Requirement already satisfied: numpy&gt;=1.12 in /home/runner/miniconda3/envs/quantecon/lib/python3.11/site-packages (from autograd) (1.26.4)
 Collecting future&gt;=0.15.2 (from autograd)
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Downloading future-1.0.0-py3-none-any.whl.metadata (4.0 kB)
+  Downloading future-1.0.0-py3-none-any.whl.metadata (4.0 kB)
 Downloading autograd-1.6.2-py3-none-any.whl (49 kB)
 ?25l   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">0.0/49.3 kB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">49.3/49.3 kB</span> <span class=" -Color -Color-Red">2.6 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">49.3/49.3 kB</span> <span class=" -Color -Color-Red">6.5 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
 ?25h
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading future-1.0.0-py3-none-any.whl (491 kB)
 ?25l   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">0.0/491.3 kB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">491.3/491.3 kB</span> <span class=" -Color -Color-Red">15.0 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">491.3/491.3 kB</span> <span class=" -Color -Color-Red">45.2 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
 ?25h
 </pre></div>
 </div>
@@ -368,7 +352,7 @@ Downloading autograd-1.6.2-py3-none-any.whl (49 kB)
 </div>
 </section>
 <section id="fixed-point-computation-using-newtons-method">
-<h2><a class="toc-backref" href="#id3"><span class="section-number">10.2. </span>Fixed Point Computation Using Newton’s Method</a><a class="headerlink" href="#fixed-point-computation-using-newtons-method" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">10.2. </span>Fixed Point Computation Using Newton’s Method<a class="headerlink" href="#fixed-point-computation-using-newtons-method" title="Permalink to this heading">#</a></h2>
 <p>In this section we solve the fixed point of the law of motion for capital in
 the setting of the <a class="reference external" href="https://en.wikipedia.org/wiki/Solow%E2%80%93Swan_model">Solow growth
 model</a>.</p>
@@ -659,7 +643,7 @@ x_1=\frac{g(x_0)-g'(x_0) x_0}{1-g'(x_0)}
 </section>
 </section>
 <section id="root-finding-in-one-dimension">
-<h2><a class="toc-backref" href="#id4"><span class="section-number">10.3. </span>Root-Finding in One Dimension</a><a class="headerlink" href="#root-finding-in-one-dimension" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">10.3. </span>Root-Finding in One Dimension<a class="headerlink" href="#root-finding-in-one-dimension" title="Permalink to this heading">#</a></h2>
 <p>In the previous section we computed fixed points.</p>
 <p>In fact Newton’s method is more commonly associated with the problem of
 finding zeros of functions.</p>
@@ -759,7 +743,7 @@ iteration 5, error = 0.00000
 </section>
 </section>
 <section id="multivariate-newtons-method">
-<h2><a class="toc-backref" href="#id5"><span class="section-number">10.4. </span>Multivariate Newton’s Method</a><a class="headerlink" href="#multivariate-newtons-method" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">10.4. </span>Multivariate Newton’s Method<a class="headerlink" href="#multivariate-newtons-method" title="Permalink to this heading">#</a></h2>
 <p>In this section, we introduce a two-good problem, present a
 visualization of the problem, and solve for the equilibrium of the two-good market
 using both a zero finder in <code class="docutils literal notranslate"><span class="pre">SciPy</span></code> and Newton’s method.</p>
@@ -967,8 +951,8 @@ The excess demand for good 1 is 0.699
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CPU times: user 134 µs, sys: 16 µs, total: 150 µs
-Wall time: 149 µs
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CPU times: user 132 µs, sys: 15 µs, total: 147 µs
+Wall time: 145 µs
 </pre></div>
 </div>
 </div>
@@ -1042,8 +1026,8 @@ J(p) =
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CPU times: user 258 µs, sys: 33 µs, total: 291 µs
-Wall time: 260 µs
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CPU times: user 266 µs, sys: 30 µs, total: 296 µs
+Wall time: 257 µs
 </pre></div>
 </div>
 </div>
@@ -1120,8 +1104,8 @@ iteration 4, error = 0.00000
 
 Result = [1.57080182 1.46928838] 
 
-CPU times: user 2.03 ms, sys: 0 ns, total: 2.03 ms
-Wall time: 1.82 ms
+CPU times: user 2.36 ms, sys: 263 µs, total: 2.62 ms
+Wall time: 2.22 ms
 </pre></div>
 </div>
 </div>
@@ -1198,8 +1182,8 @@ automatic differentiation is available <a class="reference external" href="https
 
 Result = [1.50185286 1.49865815 1.50028285 ... 1.50875149 1.48724784 1.48577532] 
 
-CPU times: user 28.3 s, sys: 178 ms, total: 28.5 s
-Wall time: 26.6 s
+CPU times: user 29.4 s, sys: 156 ms, total: 29.5 s
+Wall time: 27.6 s
 </pre></div>
 </div>
 </div>
@@ -1229,8 +1213,8 @@ Wall time: 26.6 s
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CPU times: user 31.5 s, sys: 64.5 ms, total: 31.5 s
-Wall time: 31.3 s
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>CPU times: user 32.4 s, sys: 88.3 ms, total: 32.5 s
+Wall time: 32.2 s
 </pre></div>
 </div>
 </div>
@@ -1251,7 +1235,7 @@ Wall time: 31.3 s
 </section>
 </section>
 <section id="exercises">
-<h2><a class="toc-backref" href="#id6"><span class="section-number">10.5. </span>Exercises</a><a class="headerlink" href="#exercises" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">10.5. </span>Exercises<a class="headerlink" href="#exercises" title="Permalink to this heading">#</a></h2>
 <div class="exercise admonition" id="newton_ex1">
 
 <p class="admonition-title"><span class="caption-number">Exercise 10.1 </span></p>
@@ -1356,8 +1340,8 @@ iteration 6, error = 0.00000
 
 Result = [3.84058108 3.87071771 3.41091933] 
 
-CPU times: user 4.47 ms, sys: 4 µs, total: 4.47 ms
-Wall time: 3.83 ms
+CPU times: user 4.51 ms, sys: 4 µs, total: 4.52 ms
+Wall time: 3.87 ms
 ----------------------------------------------------------------
 Attempt 2: Starting value is [3. 5. 5.] 
 
@@ -1368,8 +1352,8 @@ iteration 4, error = 0.00000
 
 Result = [3.84058108 3.87071771 3.41091933] 
 
-CPU times: user 2.96 ms, sys: 0 ns, total: 2.96 ms
-Wall time: 2.52 ms
+CPU times: user 2.87 ms, sys: 0 ns, total: 2.87 ms
+Wall time: 2.48 ms
 ----------------------------------------------------------------
 Attempt 3: Starting value is [50. 50. 50.] 
 
@@ -1382,8 +1366,8 @@ iteration 6, error = 0.00000
 
 Result = [3.84058108 3.87071771 3.41091933] 
 
-CPU times: user 310 µs, sys: 3.97 ms, total: 4.28 ms
-Wall time: 3.62 ms
+CPU times: user 3.73 ms, sys: 0 ns, total: 3.73 ms
+Wall time: 3.3 ms
 ----------------------------------------------------------------
 </pre></div>
 </div>
@@ -1432,8 +1416,8 @@ iteration 4, error = 0.00000
 
 Result = [1.78467418 1.78467418 1.78467418] 
 
-CPU times: user 3.03 ms, sys: 0 ns, total: 3.03 ms
-Wall time: 2.59 ms
+CPU times: user 2.76 ms, sys: 0 ns, total: 2.76 ms
+Wall time: 2.39 ms
 </pre></div>
 </div>
 </div>
@@ -1456,8 +1440,8 @@ iteration 5, error = 0.00000
 
 Result = [1.78467418 1.78467418 1.78467418] 
 
-CPU times: user 2.57 ms, sys: 0 ns, total: 2.57 ms
-Wall time: 2.32 ms
+CPU times: user 0 ns, sys: 3.73 ms, total: 3.73 ms
+Wall time: 3.15 ms
 </pre></div>
 </div>
 </div>
@@ -1578,8 +1562,8 @@ iteration 6, error = 0.00000
 
 Result = [1.49744442 1.49744442 1.49744442] 
 
-CPU times: user 3.28 ms, sys: 0 ns, total: 3.28 ms
-Wall time: 2.86 ms
+CPU times: user 3.11 ms, sys: 0 ns, total: 3.11 ms
+Wall time: 2.67 ms
 ----------------------------------------------------------------
 Attempt 3: Starting value is [4.5 0.1 4. ] 
 
@@ -1594,8 +1578,8 @@ iteration 8, error = 0.00000
 
 Result = [1.49744442 1.49744442 1.49744442] 
 
-CPU times: user 2.74 ms, sys: 0 ns, total: 2.74 ms
-Wall time: 2.74 ms
+CPU times: user 3.61 ms, sys: 0 ns, total: 3.61 ms
+Wall time: 3.17 ms
 ----------------------------------------------------------------
 </pre></div>
 </div>

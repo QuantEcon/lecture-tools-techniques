@@ -23,10 +23,6 @@ kernelspec:
 ```{index} single: Linear Algebra
 ```
 
-```{contents} Contents
-:depth: 2
-```
-
 ## Overview
 
 Linear algebra is one of the most useful branches of applied mathematics for economists to invest in.
@@ -65,7 +61,7 @@ These are the kinds of topics addressed by linear algebra.
 
 In this lecture we will cover the basics of linear and matrix algebra, treating both theory and computation.
 
-We admit some overlap with [this lecture](https://python-programming.quantecon.org/numpy.html), where operations on NumPy arrays were first explained.
+We admit some overlap with {doc}`this lecture <pyprog:numpy>`, where operations on NumPy arrays were first explained.
 
 Note that this lecture is more theoretical than most, and contains background
 material that will be used in applications as we go along.

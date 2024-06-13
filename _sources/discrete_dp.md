@@ -20,10 +20,6 @@ kernelspec:
 
 # {index}`Discrete State Dynamic Programming <single: Discrete State Dynamic Programming>`
 
-```{contents} Contents
-:depth: 2
-```
-
 In addition to what's in Anaconda, this lecture will need the following libraries:
 
 ```{code-cell} ipython
@@ -66,7 +62,6 @@ Let's start with some imports:
 ```{code-cell} ipython
 import numpy as np
 import matplotlib.pyplot as plt
-%matplotlib inline
 import quantecon as qe
 import scipy.sparse as sparse
 from quantecon import compute_fixed_point
@@ -92,7 +87,7 @@ Among other things, it offers
 * the ability to scale to large problems by minimizing vectorized operators and allowing operations on sparse matrices
 
 JIT compilation relies on [Numba](http://numba.pydata.org/), which should work
-seamlessly if you are using [Anaconda](https://www.anaconda.com/download/) as [suggested](https://python-programming.quantecon.org/getting_started.html).
+seamlessly if you are using [Anaconda](https://www.anaconda.com/download/) as {doc}`suggested <pyprog:getting_started>`.
 
 ### References
 

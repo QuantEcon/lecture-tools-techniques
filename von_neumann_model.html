@@ -56,19 +56,19 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
 
   
-  <link href="_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" href="_static/styles/quantecon-book-theme.css?digest=b09b2da44b9015b4fa76ea072fa2d8f7faee5492" type="text/css" />
@@ -80,9 +80,9 @@
     <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
-  <script src="_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=3ee479438cf8b5e0d341"></script>
 
 
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
@@ -248,21 +248,7 @@ const thebe_selector_output = ".output, .cell_output"
                 <img style="width:250px;display:inline;" width="250px" src="https://assets.quantecon.org/img/qe-menubar-logo.svg" alt="QuantEcon">
         </a>
 </div><section class="tex2jax_ignore mathjax_ignore" id="von-neumann-growth-model-and-a-generalization">
-<span id="index-0"></span><h1><a class="toc-backref" href="#id14"><span class="section-number">9. </span>Von Neumann Growth Model (and a Generalization)</a><a class="headerlink" href="#von-neumann-growth-model-and-a-generalization" title="Permalink to this heading">#</a></h1>
-<div class="contents topic" id="contents">
-<p class="topic-title">Contents</p>
-<ul class="simple">
-<li><p><a class="reference internal" href="#von-neumann-growth-model-and-a-generalization" id="id14">Von Neumann Growth Model (and a Generalization)</a></p>
-<ul>
-<li><p><a class="reference internal" href="#notation" id="id15">Notation</a></p></li>
-<li><p><a class="reference internal" href="#model-ingredients-and-assumptions" id="id16">Model Ingredients and Assumptions</a></p></li>
-<li><p><a class="reference internal" href="#dynamic-interpretation" id="id17">Dynamic Interpretation</a></p></li>
-<li><p><a class="reference internal" href="#duality" id="id18">Duality</a></p></li>
-<li><p><a class="reference internal" href="#interpretation-as-two-player-zero-sum-game" id="id19">Interpretation as Two-player Zero-sum Game</a></p></li>
-</ul>
-</li>
-</ul>
-</div>
+<span id="index-0"></span><h1><span class="section-number">9. </span>Von Neumann Growth Model (and a Generalization)<a class="headerlink" href="#von-neumann-growth-model-and-a-generalization" title="Permalink to this heading">#</a></h1>
 <p>This lecture uses the class <code class="docutils literal notranslate"><span class="pre">Neumann</span></code> to calculate key objects of a
 linear growth model of John von Neumann <span id="id1">[<a class="reference internal" href="zreferences.html#id61" title="John von Neumann. Uber ein okonomsiches gleichungssystem und eine verallgemeinering des browerschen fixpunktsatzes. In Erge. Math. Kolloq., volume 8, 73–83. 1937.">von Neumann, 1937</a>]</span> that was generalized by
 Kemeny, Morgenstern and Thompson <span id="id2">[<a class="reference internal" href="zreferences.html#id64" title="John G Kemeny, Oskar Morgenstern, and Gerald L Thompson. A generalization of the von neumann model of an expanding economy. Econometrica, pages 115–135, 1956.">Kemeny <em>et al.</em>, 1956</a>]</span>.</p>
@@ -555,7 +541,7 @@ following important tools:</p>
 </div>
 </div>
 <section id="notation">
-<h2><a class="toc-backref" href="#id15"><span class="section-number">9.1. </span>Notation</a><a class="headerlink" href="#notation" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">9.1. </span>Notation<a class="headerlink" href="#notation" title="Permalink to this heading">#</a></h2>
 <p>We use the following notation.</p>
 <p><span class="math notranslate nohighlight">\(\mathbf{0}\)</span> denotes
 a vector of zeros.</p>
@@ -584,7 +570,7 @@ denote the <span class="math notranslate nohighlight">\(j\)</span> th column and
 respectively.</p>
 </section>
 <section id="model-ingredients-and-assumptions">
-<h2><a class="toc-backref" href="#id16"><span class="section-number">9.2. </span>Model Ingredients and Assumptions</a><a class="headerlink" href="#model-ingredients-and-assumptions" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">9.2. </span>Model Ingredients and Assumptions<a class="headerlink" href="#model-ingredients-and-assumptions" title="Permalink to this heading">#</a></h2>
 <p>A pair <span class="math notranslate nohighlight">\((A,B)\)</span> of <span class="math notranslate nohighlight">\(m\times n\)</span> non-negative matrices defines
 an economy.</p>
 <ul class="simple">
@@ -711,7 +697,7 @@ Assumptions:
 </div>
 </section>
 <section id="dynamic-interpretation">
-<h2><a class="toc-backref" href="#id17"><span class="section-number">9.3. </span>Dynamic Interpretation</a><a class="headerlink" href="#dynamic-interpretation" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">9.3. </span>Dynamic Interpretation<a class="headerlink" href="#dynamic-interpretation" title="Permalink to this heading">#</a></h2>
 <p>Attach a time index <span class="math notranslate nohighlight">\(t\)</span> to the preceding objects, regard an economy
 as a dynamic system, and study sequences</p>
 <div class="math notranslate nohighlight">
@@ -775,7 +761,7 @@ conduct an analysis purely in terms of a time-invariant growth rate
 </section>
 </section>
 <section id="duality">
-<h2><a class="toc-backref" href="#id18"><span class="section-number">9.4. </span>Duality</a><a class="headerlink" href="#duality" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">9.4. </span>Duality<a class="headerlink" href="#duality" title="Permalink to this heading">#</a></h2>
 <p>Two problems are connected by a remarkable dual
 relationship between  technological and valuation characteristics of
 the economy:</p>
@@ -876,7 +862,7 @@ this extra condition does not affect the existence result, while it
 significantly reduces the number of (relevant) solutions.</p>
 </section>
 <section id="interpretation-as-two-player-zero-sum-game">
-<h2><a class="toc-backref" href="#id19"><span class="section-number">9.5. </span>Interpretation as Two-player Zero-sum Game</a><a class="headerlink" href="#interpretation-as-two-player-zero-sum-game" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">9.5. </span>Interpretation as Two-player Zero-sum Game<a class="headerlink" href="#interpretation-as-two-player-zero-sum-game" title="Permalink to this heading">#</a></h2>
 <p>To compute the equilibrium <span class="math notranslate nohighlight">\((\gamma^{*}, x_0, p_0)\)</span>, we follow the
 algorithm proposed by Hamburger, Thompson and Weil (1967), building on
 the key insight that an equilibrium (with balanced growth) can be

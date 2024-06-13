@@ -56,19 +56,19 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
 
   
-  <link href="_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" href="_static/styles/quantecon-book-theme.css?digest=b09b2da44b9015b4fa76ea072fa2d8f7faee5492" type="text/css" />
@@ -80,9 +80,9 @@
     <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
-  <script src="_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=3ee479438cf8b5e0d341"></script>
 
 
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
@@ -276,25 +276,9 @@ const thebe_selector_output = ".output, .cell_output"
                 <img style="width:250px;display:inline;" width="250px" src="https://assets.quantecon.org/img/qe-menubar-logo.svg" alt="QuantEcon">
         </a>
 </div><section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1><a class="toc-backref" href="#id5"><span class="section-number">1. </span>Linear Algebra</a><a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
-<div class="contents topic" id="contents">
-<span id="index-0"></span><p class="topic-title">Contents</p>
-<ul class="simple">
-<li><p><a class="reference internal" href="#id1" id="id5">Linear Algebra</a></p>
-<ul>
-<li><p><a class="reference internal" href="#overview" id="id6">Overview</a></p></li>
-<li><p><a class="reference internal" href="#vectors" id="id7">Vectors</a></p></li>
-<li><p><a class="reference internal" href="#matrices" id="id8">Matrices</a></p></li>
-<li><p><a class="reference internal" href="#solving-systems-of-equations" id="id9">Solving Systems of Equations</a></p></li>
-<li><p><a class="reference internal" href="#eigenvalues-and-eigenvectors" id="id10">Eigenvalues and Eigenvectors</a></p></li>
-<li><p><a class="reference internal" href="#further-topics" id="id11">Further Topics</a></p></li>
-<li><p><a class="reference internal" href="#exercises" id="id12">Exercises</a></p></li>
-</ul>
-</li>
-</ul>
-</div>
+<h1><span class="section-number">1. </span>Linear Algebra<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
 <section id="overview">
-<h2><a class="toc-backref" href="#id6"><span class="section-number">1.1. </span>Overview</a><a class="headerlink" href="#overview" title="Permalink to this heading">#</a></h2>
+<span id="index-0"></span><h2><span class="section-number">1.1. </span>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">#</a></h2>
 <p>Linear algebra is one of the most useful branches of applied mathematics for economists to invest in.</p>
 <p>For example, many applied problems in economics and finance require the solution of a linear system of equations, such as</p>
 <div class="math notranslate nohighlight">
@@ -321,7 +305,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p>These are the kinds of topics addressed by linear algebra.</p>
 <p>In this lecture we will cover the basics of linear and matrix algebra, treating both theory and computation.</p>
-<p>We admit some overlap with <a class="reference external" href="https://python-programming.quantecon.org/numpy.html">this lecture</a>, where operations on NumPy arrays were first explained.</p>
+<p>We admit some overlap with <a class="reference external" href="https://python-programming.quantecon.org/numpy.html" title="(in Python)"><span class="xref std std-doc">this lecture</span></a>, where operations on NumPy arrays were first explained.</p>
 <p>Note that this lecture is more theoretical than most, and contains background
 material that will be used in applications as we go along.</p>
 <p>Let’s start with some imports:</p>
@@ -339,7 +323,7 @@ material that will be used in applications as we go along.</p>
 </div>
 </section>
 <section id="vectors">
-<h2><a class="toc-backref" href="#id7"><span class="section-number">1.2. </span><span class="target" id="index-1"></span>Vectors</a><a class="headerlink" href="#vectors" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">1.2. </span><span class="target" id="index-1"></span>Vectors<a class="headerlink" href="#vectors" title="Permalink to this heading">#</a></h2>
 <p id="index-2">A <em>vector</em> of length <span class="math notranslate nohighlight">\(n\)</span> is just a sequence (or array, or tuple) of <span class="math notranslate nohighlight">\(n\)</span> numbers, which we write as <span class="math notranslate nohighlight">\(x = (x_1, \ldots, x_n)\)</span> or  <span class="math notranslate nohighlight">\(x = [x_1, \ldots, x_n]\)</span>.</p>
 <p>We will write these sequences either horizontally or vertically as we please.</p>
 <p>(Later, when we wish to perform certain matrix operations, it will become necessary to distinguish between the two)</p>
@@ -691,7 +675,7 @@ then</p>
 </section>
 </section>
 <section id="matrices">
-<h2><a class="toc-backref" href="#id8"><span class="section-number">1.3. </span>Matrices</a><a class="headerlink" href="#matrices" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">1.3. </span>Matrices<a class="headerlink" href="#matrices" title="Permalink to this heading">#</a></h2>
 <p id="index-8">Matrices are a neat way of organizing data for use in linear operations.</p>
 <p>An <span class="math notranslate nohighlight">\(n \times k\)</span> matrix is a rectangular array <span class="math notranslate nohighlight">\(A\)</span> of numbers with <span class="math notranslate nohighlight">\(n\)</span> rows and <span class="math notranslate nohighlight">\(k\)</span> columns:</p>
 <div class="math notranslate nohighlight">
@@ -890,7 +874,7 @@ f(\alpha x + \beta y) = \alpha f(x) + \beta f(y)
 </section>
 </section>
 <section id="solving-systems-of-equations">
-<h2><a class="toc-backref" href="#id9"><span class="section-number">1.4. </span>Solving Systems of Equations</a><a class="headerlink" href="#solving-systems-of-equations" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">1.4. </span>Solving Systems of Equations<a class="headerlink" href="#solving-systems-of-equations" title="Permalink to this heading">#</a></h2>
 <p id="index-12">Recall again the system of equations <a class="reference internal" href="#equation-la-se">(1.1)</a>.</p>
 <p>If we compare <a class="reference internal" href="#equation-la-se">(1.1)</a> and <a class="reference internal" href="#equation-la-atx">(1.2)</a>, we see that <a class="reference internal" href="#equation-la-se">(1.1)</a> can now be
 written more conveniently as</p>
@@ -1115,7 +1099,7 @@ y
 </section>
 </section>
 <section id="eigenvalues-and-eigenvectors">
-<span id="la-eigen"></span><h2><a class="toc-backref" href="#id10"><span class="section-number">1.5. </span><span class="target" id="index-16"></span>Eigenvalues and <span class="target" id="index-17"></span>Eigenvectors</a><a class="headerlink" href="#eigenvalues-and-eigenvectors" title="Permalink to this heading">#</a></h2>
+<span id="la-eigen"></span><h2><span class="section-number">1.5. </span><span class="target" id="index-16"></span>Eigenvalues and <span class="target" id="index-17"></span>Eigenvectors<a class="headerlink" href="#eigenvalues-and-eigenvectors" title="Permalink to this heading">#</a></h2>
 <span class="target" id="index-18"></span><p id="index-19">Let <span class="math notranslate nohighlight">\(A\)</span> be an <span class="math notranslate nohighlight">\(n \times n\)</span> square matrix.</p>
 <p>If <span class="math notranslate nohighlight">\(\lambda\)</span> is scalar and <span class="math notranslate nohighlight">\(v\)</span> is a non-zero vector in <span class="math notranslate nohighlight">\(\mathbb R ^n\)</span> such that</p>
 <div class="math notranslate nohighlight">
@@ -1248,7 +1232,7 @@ A v = \lambda v\)</span>, but this is not always the case.</p>
 </section>
 </section>
 <section id="further-topics">
-<h2><a class="toc-backref" href="#id11"><span class="section-number">1.6. </span>Further Topics</a><a class="headerlink" href="#further-topics" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">1.6. </span>Further Topics<a class="headerlink" href="#further-topics" title="Permalink to this heading">#</a></h2>
 <p>We round out our discussion by briefly mentioning several other important
 topics.</p>
 <section id="series-expansions">
@@ -1331,7 +1315,7 @@ is <span id="id4">[<a class="reference internal" href="zreferences.html#id165" t
 </section>
 </section>
 <section id="exercises">
-<h2><a class="toc-backref" href="#id12"><span class="section-number">1.7. </span>Exercises</a><a class="headerlink" href="#exercises" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">1.7. </span>Exercises<a class="headerlink" href="#exercises" title="Permalink to this heading">#</a></h2>
 <div class="exercise admonition" id="la_ex1">
 
 <p class="admonition-title"><span class="caption-number">Exercise 1.1 </span></p>

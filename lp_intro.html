@@ -56,19 +56,19 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
 
   
-  <link href="_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" href="_static/styles/quantecon-book-theme.css?digest=b09b2da44b9015b4fa76ea072fa2d8f7faee5492" type="text/css" />
@@ -80,9 +80,9 @@
     <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
-  <script src="_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=3ee479438cf8b5e0d341"></script>
 
 
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
@@ -320,7 +320,7 @@ a linear objective function subject to a set of  linear equality and/or inequali
 <p>To produce each product requires both material and labor.</p>
 <p>Selling each product generates revenue.</p>
 <p>Required per unit material and labor  inputs and  revenues  are shown in table below:</p>
-<table class="colwidths-auto table">
+<div class="pst-scrollable-table-container"><table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-center head"><p></p></th>
 <th class="text-center head"><p>Product 1</p></th>
@@ -342,6 +342,7 @@ a linear objective function subject to a set of  linear equality and/or inequali
 </tr>
 </tbody>
 </table>
+</div>
 <p>30 units of material and 20 units of labor available.</p>
 <p>A firm’s problem is to construct a  production plan that uses its  30 units of materials and 20 unites of labor
 to maximize its revenue.</p>
@@ -422,7 +423,7 @@ that is no more than <span class="math notranslate nohighlight">\( \$ \)</span>5
 <p>Let  <span class="math notranslate nohighlight">\(x_1\)</span> be the amount of put in the annuity, <span class="math notranslate nohighlight">\(x_2, x_3, x_4\)</span> be  bank deposit balances at the beginning of the three years,  and <span class="math notranslate nohighlight">\(x_5\)</span> be the amount invested  in the corporate bond.</p>
 <p>When <span class="math notranslate nohighlight">\(x_2, x_3, x_4\)</span> are negative, it means that  the mutual fund has borrowed from  bank.</p>
 <p>The table below shows the mutual fund’s decision variables together with the timing protocol described above:</p>
-<table class="colwidths-auto table">
+<div class="pst-scrollable-table-container"><table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-center head"><p></p></th>
 <th class="text-center head"><p>Year 1</p></th>
@@ -448,6 +449,7 @@ that is no more than <span class="math notranslate nohighlight">\( \$ \)</span>5
 </tr>
 </tbody>
 </table>
+</div>
 <p>The  mutual fund’s decision making proceeds according to the following timing protocol:</p>
 <ol class="arabic">
 <li><p>At the beginning of the first year, the mutual fund decides how much to invest in the annuity and
@@ -813,7 +815,7 @@ a_m' \\
 <p>For a <strong>maximization</strong>  problem, we can first transform it to an equivalent minimization problem and then follow the above steps above to construct the  dual <strong>minimization</strong> problem.</p>
 <p>We can easily verify that  <strong>the dual of a dual problem is the  primal problem</strong>.</p>
 <p>The following table summarizes relationships between objects in primal and dual problems.</p>
-<table class="colwidths-auto table">
+<div class="pst-scrollable-table-container"><table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-center head"><p>Objective: Min</p></th>
 <th class="text-center head"><p>Objective: Max</p></th>
@@ -846,6 +848,7 @@ a_m' \\
 </tr>
 </tbody>
 </table>
+</div>
 <p>As an example, the dual problem of the standard form <a class="reference internal" href="#equation-lpproblem">(7.2)</a> is:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}

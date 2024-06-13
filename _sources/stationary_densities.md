@@ -23,10 +23,6 @@ kernelspec:
 ```{index} single: Markov Chains; Continuous State
 ```
 
-```{contents} Contents
-:depth: 2
-```
-
 In addition to what's in Anaconda, this lecture will need the following libraries:
 
 ```{code-cell} ipython
@@ -78,7 +74,6 @@ Let's begin with some imports:
 ```{code-cell} ipython
 import numpy as np
 import matplotlib.pyplot as plt
-%matplotlib inline
 from scipy.stats import lognorm, beta
 from quantecon import LAE
 from scipy.stats import norm, gaussian_kde
