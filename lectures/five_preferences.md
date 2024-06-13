@@ -73,7 +73,6 @@ from numba import njit
 :tags: [hide-input]
 
 # Plotting parameters
-%matplotlib inline
 %config InlineBackend.figure_format='retina'
 
 plt.rc('text', usetex=True)

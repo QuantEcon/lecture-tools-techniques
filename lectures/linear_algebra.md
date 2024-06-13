@@ -23,10 +23,6 @@ kernelspec:
 ```{index} single: Linear Algebra
 ```
 
-```{contents} Contents
-:depth: 2
-```
-
 ## Overview
 
 Linear algebra is one of the most useful branches of applied mathematics for economists to invest in.
