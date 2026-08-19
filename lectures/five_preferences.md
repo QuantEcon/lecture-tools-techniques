@@ -56,6 +56,7 @@ We begin with some that we'll use to create some graphs.
 
 ```{code-cell} ipython3
 # Package imports
+import shutil
 import numpy as np
 import matplotlib as mpl
 import matplotlib.pyplot as plt
@@ -63,7 +64,7 @@ plt.rcParams["figure.figsize"] = (11, 5)
 from matplotlib import rc, cm
 from mpl_toolkits.mplot3d import Axes3D
 from scipy import optimize, stats
-from scipy.io import loadmat
+import pandas as pd
 from matplotlib.collections import LineCollection
 from matplotlib.colors import ListedColormap, BoundaryNorm
 from numba import njit
@@ -75,7 +76,10 @@ from numba import njit
 # Plotting parameters
 %config InlineBackend.figure_format='retina'
 
-plt.rc('text', usetex=True)
+# Render text with LaTeX only where a latex binary exists (the build has
+# texlive); on latex-less runtimes such as Colab, fall back to mathtext
+# instead of raising at the first rendered figure.
+plt.rc('text', usetex=bool(shutil.which('latex')))
 
 label_size = 20
 label_tick_size = 18
@@ -1879,7 +1883,7 @@ aversion associated with a logarithmic one-period utility function.
 :tags: [hide-input]
 
 # Load data
-data = loadmat('dataBHS.mat')
+data = pd.read_csv('https://github.com/QuantEcon/data-lectures/raw/main/lectures/dataBHS.csv')
 
 # Set parameter values
 μ_c = 0.004952
@@ -1891,7 +1895,7 @@ data = loadmat('dataBHS.mat')
 :tags: [hide-input]
 
 # Compute consumption growth
-c = data['c']
+c = data[['c']].to_numpy()   # keep the (236, 1) column shape of the source arrays
 c_growth = c[1:] - c[:-1]
 
 # Create histogram of consumption growth
@@ -1929,7 +1933,7 @@ ax.legend(lns, labs, loc=0);
 ```{code-cell} ipython3
 :tags: [hide-input]
 
-rc('text',usetex=True)
+rc('text', usetex=bool(shutil.which('latex')))
 ```
 
 The density for the approximating model is
